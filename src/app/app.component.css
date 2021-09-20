@@ -97,7 +97,7 @@ ul li {
 .imgsize {
     width: 200px;
     height: 150px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .split {
@@ -177,16 +177,21 @@ ul li {
     grid-gap: 20px;
     align-items: stretch; */
 }
+
 .grid img {
     /* border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     max-width: 100%; */
 }
 
-
-
 .row {
     display: flex;
+}
+
+.row3 {
+    display: flex;
+    width: 100%;
+    padding: 100px;
 }
 
 .column {
@@ -247,6 +252,28 @@ input[type="submit"]:hover {
     width: 15px;
     border: 2px solid #ffffff;
 }
+
+.btn {
+    border: 2px solid #ffffff;
+    background-color: #18bc9c;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnimg {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+}
+
+.success {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
 .form {
     max-width: 600px;
     text-align: center;

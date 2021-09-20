@@ -3,13 +3,19 @@
 <body>
     <div class="container">
         <section class="navbar-area">
+            <div class="row3">
+                <div class="column">
+                    <div>START</div>
+                </div>
 
-            <div style="float: left; padding: 10px;">START</div>
-            <ul>
-                <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
-                <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
-                <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
-            </ul>
+                <div class="column">
+                    <ul style="font-size: 10px;">
+                        <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
+                        <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
+                        <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
 
@@ -19,10 +25,10 @@
                     <img #img src="../../assets/image/profile.png" height="200px" width="200px">
                 </div>
                 <div class="title">START</div>
-                <div>
-                    <hr style="height:2px;border-width:0;color:gray;background-color:#fff">
+                <div style="display: flex; flex-direction: row;">
+                    <hr style="height:2px;border-width:0;color: #fff;">
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
-                    <hr style="height:2px;border-width:0;color:gray;background-color:#fff">
+                    <hr style="height:2px;border-width:0;color: #fff;">
                 </div>
                 <div style="text-align: center; color: #fff; padding: 5px;">
                     <span class="spn">Web Developer -</span>
@@ -65,16 +71,14 @@
                 </div>
                 <div class="row">
                     <div class="column">
-                        <p>Freelancer is free theme started by Start. The download includes complete source files
-                            including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy
-                            customization.</p>
+                        <p>Freelancer is free theme started by Start. The download includes complete source files including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy customization.
+                        </p>
                     </div>
                     <div class="column">
-                        <p>Wheather you are student looking to showcase your work, a professional looking to attract
-                            clients, or a graphic artist looking to share you projects, this template is the perfect
-                            starting point!</p>
+                        <p>Wheather you are student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share you projects, this template is the perfect starting point!</p>
                     </div>
                 </div>
+                <div><button class="btn success"><img #img src="../../assets/image/download.png" class="btnimg">Download Theme</button></div>
             </div>
         </section>
 
@@ -87,8 +91,7 @@
                 <input type="text" id="fname" name="firstname" placeholder="Name">
                 <input type="email" id="email" name="email" placeholder="Email Address">
                 <input type="number" id="phone" name="lastname" placeholder="Phone Number">
-                <textarea id="message" name="message" placeholder="Message" style="height:100px"
-                    style="border-bottom: 1px solid #ccc !important;"></textarea>
+                <textarea id="message" name="message" placeholder="Message" style="height:100px" style="border-bottom: 1px solid #ccc !important;"></textarea>
                 <input type="submit" value="Send">
             </form>
         </section>
