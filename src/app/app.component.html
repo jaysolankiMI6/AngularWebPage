@@ -1,0 +1,132 @@
+<html>
+
+<body>
+    <div class="container">
+        <section class="navbar-area">
+
+            <div style="float: left; padding: 10px;">START</div>
+            <ul>
+                <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
+                <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
+                <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
+            </ul>
+        </section>
+
+
+        <section class="section1">
+            <div class="vertical-center">
+                <div>
+                    <img #img src="../../assets/image/profile.png" height="200px" width="200px">
+                </div>
+                <div class="title">START</div>
+                <div>
+                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                </div>
+                <div style="text-align: center; color: #fff; padding: 5px;">
+                    <span class="spn">Web Developer -</span>
+                    <span class="spn">Graphic Artist -</span>
+                    <span class="spn">User Experience Designer</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="title2">PORTFOLIO</div>
+            <div>
+                <img #img src="../../assets/image/star.png" height="20px" width="20px">
+            </div>
+            <!-- <div class="images6"> -->
+            <div class="grid">
+                <img #img src="../../assets/image/cabin.png">
+                <img #img src="../../assets/image/cake.png">
+                <img #img src="../../assets/image/circus.png">
+            </div>
+            <div class="grid">
+                <img #img src="../../assets/image/game.png">
+                <img #img src="../../assets/image/safe.png">
+                <img #img src="../../assets/image/submarine.png">
+            </div>
+            <!-- </div> -->
+        </section>
+
+
+
+        <section class="section3">
+            <div class="vertical-center">
+                <div class="title">ABOUT</div>
+                <div>
+                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <p>Freelancer is free theme started by Start. The download includes complete source files
+                            including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy
+                            customization.</p>
+                    </div>
+                    <div class="column">
+                        <p>Wheather you are student looking to showcase your work, a professional looking to attract
+                            clients, or a graphic artist looking to share you projects, this template is the perfect
+                            starting point!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <!-- <div class="title2">CONTACT ME</div>
+            <div>
+                <img #img src="../../assets/image/star.png" height="20px" width="20px">
+            </div> -->
+            <form style="width: 500px;">
+                <input type="text" id="fname" name="firstname" placeholder="Name">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                <input type="number" id="phone" name="lastname" placeholder="Phone Number">
+                <textarea id="message" name="message" placeholder="Message" style="height:100px"
+                    style="border-bottom: 1px solid #ccc !important;"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+
+        <section class="section5">
+            <div class="row2">
+                <div class="column2">
+                    <div>
+                        <h4>LOCATION</h4>
+                        <p>3481 Melrose place Beverly Hills, CA 90210</p>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div>
+                        <h4>AROUND THE WEB</h4>
+                        <div>
+                            <img #img src="../../assets/image/facebook.png" class="roudeimg">
+                            <img #img src="../../assets/image/google-plus.png" class="roudeimg">
+                            <img #img src="../../assets/image/twitter.png" class="roudeimg">
+                            <img #img src="../../assets/image/linkedin.png" class="roudeimg">
+                            <img #img src="../../assets/image/dribbble.png" class="roudeimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div>
+                        <h4>ABOUT FREELANCER</h4>
+                        <p>Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section6">
+            <p>Copyright Your Website 2016
+            </p>
+        </section>
+    </div>
+
+</body>
+
+</html>
+
+<!-- <p>demo</p> -->
+<!-- <a [routerLink]="['/nested']"> Navigation -</a> -->
+<!-- <router-outlet></router-outlet> -->
