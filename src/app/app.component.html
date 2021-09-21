@@ -1,15 +1,19 @@
 <html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
     <div class="container">
         <section class="navbar-area">
-            <div class="row3">
+            <div class="rownav">
                 <div class="column">
-                    <div>START</div>
+                    <div style="font-size: 18px;">START</div>
                 </div>
 
                 <div class="column">
-                    <ul style="font-size: 10px;">
+                    <ul style="font-size: 12px;">
                         <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
                         <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
                         <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
@@ -19,16 +23,14 @@
         </section>
 
 
-        <section class="section1">
+        <section class="section1 content">
             <div class="vertical-center">
                 <div>
                     <img #img src="../../assets/image/profile.png" height="200px" width="200px">
                 </div>
-                <div class="title">START</div>
-                <div style="display: flex; flex-direction: row;">
-                    <hr style="height:2px;border-width:0;color: #fff;">
+                <div class="title" style="color: #fff; font-size: 48px !important;">START</div>
+                <div>
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
-                    <hr style="height:2px;border-width:0;color: #fff;">
                 </div>
                 <div style="text-align: center; color: #fff; padding: 5px;">
                     <span class="spn">Web Developer -</span>
@@ -39,8 +41,8 @@
         </section>
 
         <section class="section2">
-            <div class="title2">PORTFOLIO</div>
             <div class="imgsty">
+            <div class="title" style="color: #000000;">PORTFOLIO</div>           
                 <div>
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
@@ -63,51 +65,57 @@
 
 
 
-        <section class="section3">
+        <section class="section3 content">
             <div class="vertical-center">
-                <div class="title">ABOUT</div>
+                <div class="title" style="color: #fff;">ABOUT</div>
                 <div>
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
                 <div class="row">
                     <div class="column">
-                        <p>Freelancer is free theme started by Start. The download includes complete source files including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy customization.
+                        <p>Freelancer is free theme started by Start. The download includes complete source files
+                            including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy
+                            customization.
                         </p>
                     </div>
                     <div class="column">
-                        <p>Wheather you are student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share you projects, this template is the perfect starting point!</p>
+                        <p>Wheather you are student looking to showcase your work, a professional looking to attract
+                            clients, or a graphic artist looking to share you projects, this template is the perfect
+                            starting point!</p>
                     </div>
                 </div>
-                <div><button class="btn success"><img #img src="../../assets/image/download.png" class="btnimg">Download Theme</button></div>
+                <div><button class="btn success"><img #img src="../../assets/image/download.png" class="btnimg">Download
+                        Theme</button></div>
             </div>
         </section>
 
-        <section class="section4">
-            <div class="title2">CONTACT ME</div>
+        <section class="section4 content">
+            <div class="title" style="color: #000000;">CONTACT ME</div>
             <div>
                 <img #img src="../../assets/image/star.png" height="20px" width="20px">
             </div>
-            <form style="width: 500px;">
+            <form style="width: 60%;">
                 <input type="text" id="fname" name="firstname" placeholder="Name">
                 <input type="email" id="email" name="email" placeholder="Email Address">
                 <input type="number" id="phone" name="lastname" placeholder="Phone Number">
-                <textarea id="message" name="message" placeholder="Message" style="height:100px" style="border-bottom: 1px solid #ccc !important;"></textarea>
+                <textarea id="message" name="message" placeholder="Message" 
+                    style="border-bottom: 1px solid #ccc !important; height:100px !important"></textarea>
                 <input type="submit" value="Send">
             </form>
         </section>
 
 
         <section class="section5">
-            <div class="row2">
-                <div class="column2">
+            <div class="row">
+                <div class="column" style="text-align: center !important;">
                     <div>
-                        <h4>LOCATION</h4>
+                        <h3>LOCATION</h3>
                         <p>3481 Melrose place Beverly Hills, CA 90210</p>
                     </div>
                 </div>
-                <div class="column2">
+                <div class="column" style="text-align: center !important;">
                     <div>
-                        <h4>AROUND THE WEB</h4>
+                        <h3>AROUND THE WEB</h3>
                         <div>
                             <img #img src="../../assets/image/facebook.png" class="roudeimg">
                             <img #img src="../../assets/image/google-plus.png" class="roudeimg">
@@ -117,16 +125,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="column2">
+                <div class="column" style="text-align: center !important;">
                     <div>
-                        <h4>ABOUT FREELANCER</h4>
+                        <h3>ABOUT FREELANCER</h3>
                         <p>Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section6">
+        <section class="section6 content">
             <p>Copyright Your Website 2016
             </p>
         </section>
