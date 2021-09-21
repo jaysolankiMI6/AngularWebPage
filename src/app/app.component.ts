@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  list: boolean = false;
+
   title = 'design-app';
+  displaymenu() {
+    this.list = !this.list;
+  }
 }

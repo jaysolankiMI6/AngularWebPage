@@ -8,20 +8,30 @@
     <div class="container">
         <section class="navbar-area">
             <div class="rownav">
-                <div class="column">
+                <div class="column clmnleft">
                     <div style="font-size: 18px;">START</div>
                 </div>
 
-                <div class="column">
-                    <ul style="font-size: 12px;">
+                <div class="column clmnright">
+                    <ul style="font-size: 12px;" class="ulset">
                         <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
                         <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
                         <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
                     </ul>
+                    <button class="btn" id="menu_btn" (click)="displaymenu();"><i class="fa fa-bars"></i> MENU</button>
                 </div>
+
             </div>
         </section>
-
+      
+        <div *ngIf="list">
+            <ul class="overlay">
+                <li class="nav-item active" style="float: none !important; padding: 10px;"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
+                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
+                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
+            </ul>
+        </div>
+        
 
         <section class="section1 content">
             <div class="vertical-center">
@@ -42,7 +52,7 @@
 
         <section class="section2">
             <div class="imgsty">
-            <div class="title" style="color: #000000;">PORTFOLIO</div>           
+                <div class="title" style="color: #000000;">PORTFOLIO</div>
                 <div>
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
@@ -71,15 +81,17 @@
                 <div>
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
-                <div class="row">
+                <div class="row rowcmp">
                     <div class="column">
-                        <p>Freelancer is free theme started by Start. The download includes complete source files
+                        <p class="aboutcontent">Freelancer is free theme started by Start. The download includes
+                            complete source files
                             including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy
                             customization.
                         </p>
                     </div>
                     <div class="column">
-                        <p>Wheather you are student looking to showcase your work, a professional looking to attract
+                        <p class="aboutcontent">Wheather you are student looking to showcase your work, a professional
+                            looking to attract
                             clients, or a graphic artist looking to share you projects, this template is the perfect
                             starting point!</p>
                     </div>
@@ -94,26 +106,26 @@
             <div>
                 <img #img src="../../assets/image/star.png" height="20px" width="20px">
             </div>
-            <form style="width: 60%;">
+            <form class="formwidth">
                 <input type="text" id="fname" name="firstname" placeholder="Name">
                 <input type="email" id="email" name="email" placeholder="Email Address">
                 <input type="number" id="phone" name="lastname" placeholder="Phone Number">
-                <textarea id="message" name="message" placeholder="Message" 
+                <textarea id="message" name="message" placeholder="Message"
                     style="border-bottom: 1px solid #ccc !important; height:100px !important"></textarea>
                 <input type="submit" value="Send">
             </form>
         </section>
 
 
-        <section class="section5">
-            <div class="row">
-                <div class="column" style="text-align: center !important;">
+        <section class="section5 sec5mdfy">
+            <div class="row rowcmp">
+                <div class="column clmnmdfy" style="text-align: center !important;">
                     <div>
                         <h3>LOCATION</h3>
                         <p>3481 Melrose place Beverly Hills, CA 90210</p>
                     </div>
                 </div>
-                <div class="column" style="text-align: center !important;">
+                <div class="column clmnmdfy" style="text-align: center !important;">
                     <div>
                         <h3>AROUND THE WEB</h3>
                         <div>
@@ -125,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column" style="text-align: center !important;">
+                <div class="column clmnmdfy" style="text-align: center !important;">
                     <div>
                         <h3>ABOUT FREELANCER</h3>
                         <p>Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
