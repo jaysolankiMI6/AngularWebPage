@@ -1,10 +1,10 @@
-<html>
+<!-- <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+</head> -->
 
-<body>
+<!-- <body> -->
     <div class="container">
         <section class="navbar-area">
             <div class="rownav">
@@ -23,15 +23,19 @@
 
             </div>
         </section>
-      
-        <div *ngIf="list">
-            <ul class="overlay">
-                <li class="nav-item active" style="float: none !important; padding: 10px;"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
-                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
-                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
+
+        <div *ngIf="list" class="menulist">
+            <ul style="font-size: 12px; background-color: #2c3e50; 
+            float: none!important; padding: 0; margin: 0; ">
+                <li class="nav-item active" style="float: none !important; padding: 10px;"><a
+                        [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
+                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/about']"
+                        class="a">ABOUT</a></li>
+                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/contact']"
+                        class="a">CONTACT</a></li>
             </ul>
         </div>
-        
+
 
         <section class="section1 content">
             <div class="vertical-center">
@@ -40,7 +44,9 @@
                 </div>
                 <div class="title" style="color: #fff; font-size: 48px !important;">START</div>
                 <div>
-                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                    <div class="line">
+                        <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                    </div>                    
                 </div>
                 <div style="text-align: center; color: #fff; padding: 5px;">
                     <span class="spn">Web Developer -</span>
@@ -54,7 +60,9 @@
             <div class="imgsty">
                 <div class="title" style="color: #000000;">PORTFOLIO</div>
                 <div>
-                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                    <div class="line blackline">
+                        <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
+                    </div>                    
                 </div>
                 <!-- <div class="images6"> -->
                 <div>
@@ -79,7 +87,9 @@
             <div class="vertical-center">
                 <div class="title" style="color: #fff;">ABOUT</div>
                 <div>
-                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                    <div class="line">
+                        <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                    </div>                    
                 </div>
                 <div class="row rowcmp">
                     <div class="column">
@@ -104,7 +114,9 @@
         <section class="section4 content">
             <div class="title" style="color: #000000;">CONTACT ME</div>
             <div>
-                <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                <div class="line blackline">
+                    <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
+                </div>                    
             </div>
             <form class="formwidth">
                 <input type="text" id="fname" name="firstname" placeholder="Name">
@@ -152,9 +164,9 @@
         </section>
     </div>
 
-</body>
+<!-- </body> -->
 
-</html>
+<!-- </html> -->
 
 <!-- <p>demo</p> -->
 <!-- <a [routerLink]="['/nested']"> Navigation -</a> -->
