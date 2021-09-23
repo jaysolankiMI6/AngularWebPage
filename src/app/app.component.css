@@ -8,6 +8,7 @@
 }
 #menu_btn {
     display: none;
+    margin: 10px;
 }
 ul li {
     float: right;
@@ -41,6 +42,7 @@ ul li {
 .menulist {
     position: absolute;
     width: 100%;
+    display: none;
 }
 
 .section1 {
@@ -182,7 +184,6 @@ ul li {
 .rownav {
     display: flex;
     width: 100%;
-    font-weight: bold;
     padding: 100px;
 }
 
@@ -252,35 +253,57 @@ input[type="submit"]:hover {
     margin: 20px auto;
 }
 
-.img {
-    /* font-family: sans-serif; */
-    /* margin: 100px auto;
-    color: #ffffff;
-    text-align: center; */
-    /* font-size: 30px;
-    max-width: 600px; */
-    /* position: relative; */
+.ulset {
+    font-size: 12px;
+    width: 100%;
+}
+.listrght {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    float: right;
 }
 
-h1:before {
+
+.line {
+    font-family: sans-serif;
+    margin: 0px auto;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    max-width: 280px;
+    position: relative;
+}
+.line:before {
     content: "";
     display: block;
-    width: 130px;
-    height: 5px;
+    width: 100px;
+    height: 3px;
     background: #ffffff;
-    left: 0;
+    left: 25px;
     top: 50%;
     position: absolute;
 }
-h1:after {
+.line:after {
     content: "";
     display: block;
-    width: 130px;
-    height: 5px;
+    width: 100px;
+    height: 3px;
     background: #ffffff;
-    right: 0;
+    right: 25px;
     top: 50%;
     position: absolute;
+}
+
+.line.blackline:before,
+.line.blackline:after {
+    background: #000000;
+}
+.blackstar {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
 }
 
 /* For mobile phones: */
@@ -321,7 +344,7 @@ h1:after {
         width: 100%;
     }
     .rownav {
-        padding: 0;
+        padding: 10px;
         align-items: center;
     }
 
@@ -340,8 +363,19 @@ h1:after {
     .sec5mdfy {
         height: auto !important;
     }
+    .menulist {
+        display: block !important;
+    }
 }
 
+@media (max-width: 768px) {
+    /* .listrght {
+        display: block !important;
+    } */
+    .menulist {
+        display: block !important;
+    }
+}
 /* Galaxy S5 portrait */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     .imgsize {
@@ -375,6 +409,9 @@ h1:after {
 
     .formwidth {
         width: 100%;
+    }
+    .menulist {
+        display: block !important;
     }
 }
 
@@ -413,6 +450,9 @@ h1:after {
         display: block;
         text-align: left;
     }
+    .menulist {
+        display: block !important;
+    }
 }
 
 /* iPhone 6, 7, & 8 in landscape */
@@ -436,6 +476,9 @@ h1:after {
     input[type="email"],
     textarea {
         width: 90% !important;
+    }
+    .menulist {
+        display: block !important;
     }
 }
 
@@ -461,6 +504,9 @@ h1:after {
     textarea {
         width: 90% !important;
     }
+    .menulist {
+        display: block !important;
+    }
 }
 
 @media only screen and (device-width: 768px) {
@@ -472,62 +518,10 @@ h1:after {
     .clmnleft {
         flex: 30%;
     }
+    .menulist {
+        display: block !important;
+    }
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-}
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-}
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-}
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-}
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-}
-
-.line {
-    font-family: sans-serif;
-    margin: 0px auto;
-    text-align: center;
-    color: black;
-    font-size: 40px;
-    max-width: 280px;
-    position: relative;
-}
-.line:before {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 3px;
-    background: #ffffff;
-    left: 25px;
-    top: 50%;
-    position: absolute;
-}
-.line:after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 3px;
-    background: #ffffff;
-    right: 25px;
-    top: 50%;
-    position: absolute;
-}
-
-.line.blackline:before, .line.blackline:after {
-    background: #000000;
-}
-.blackstar {
-    -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(1) invert(1);
-}

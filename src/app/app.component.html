@@ -5,13 +5,12 @@
 </head> -->
 
 <!-- <body> -->
-    <div class="container">
-        <section class="navbar-area">
-            <div class="rownav">
+<div class="container">
+    <section class="navbar-area">
+        <!-- <div class="rownav">
                 <div class="column clmnleft">
                     <div style="font-size: 18px;">START</div>
                 </div>
-
                 <div class="column clmnright">
                     <ul style="font-size: 12px;" class="ulset">
                         <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
@@ -20,149 +19,161 @@
                     </ul>
                     <button class="btn" id="menu_btn" (click)="displaymenu();"><i class="fa fa-bars"></i> MENU</button>
                 </div>
+            </div> -->
 
-            </div>
-        </section>
-
-        <div *ngIf="list" class="menulist">
-            <ul style="font-size: 12px; background-color: #2c3e50; 
-            float: none!important; padding: 0; margin: 0; ">
-                <li class="nav-item active" style="float: none !important; padding: 10px;"><a
-                        [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
-                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/about']"
-                        class="a">ABOUT</a></li>
-                <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/contact']"
-                        class="a">CONTACT</a></li>
+        <div class="rownav">
+            <p style="font-size: 18px; font-weight: bold;">START</p>
+            <div class="listrght">
+            <ul style="font-size: 12px;" class="ulset">
+                <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
+                <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
+                <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
             </ul>
+            <button class="btn" id="menu_btn" (click)="displaymenu();"><i class="fa fa-bars"></i> MENU</button>
+            </div>
         </div>
 
+    </section>
 
-        <section class="section1 content">
-            <div class="vertical-center">
-                <div>
-                    <img #img src="../../assets/image/profile.png" height="200px" width="200px">
-                </div>
-                <div class="title" style="color: #fff; font-size: 48px !important;">START</div>
-                <div>
-                    <div class="line">
-                        <img #img src="../../assets/image/star.png" height="20px" width="20px">
-                    </div>                    
-                </div>
-                <div style="text-align: center; color: #fff; padding: 5px;">
-                    <span class="spn">Web Developer -</span>
-                    <span class="spn">Graphic Artist -</span>
-                    <span class="spn">User Experience Designer</span>
+    <div *ngIf="list" class="menulist">
+        <ul style="font-size: 12px; background-color: #2c3e50; 
+            float: none!important; padding: 0; margin: 0; ">
+            <li class="nav-item active" style="float: none !important; padding: 10px;"><a [routerLink]="['/portfolio']"
+                    class="a">PORTFOLIO</a></li>
+            <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/about']"
+                    class="a">ABOUT</a></li>
+            <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/contact']"
+                    class="a">CONTACT</a></li>
+        </ul>
+    </div>
+
+
+    <section class="section1 content">
+        <div class="vertical-center">
+            <div>
+                <img #img src="../../assets/image/profile.png" height="200px" width="200px">
+            </div>
+            <div class="title" style="color: #fff; font-size: 48px !important;">START</div>
+            <div>
+                <div class="line">
+                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
             </div>
-        </section>
-
-        <section class="section2">
-            <div class="imgsty">
-                <div class="title" style="color: #000000;">PORTFOLIO</div>
-                <div>
-                    <div class="line blackline">
-                        <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
-                    </div>                    
-                </div>
-                <!-- <div class="images6"> -->
-                <div>
-                    <div class="grid">
-                        <img #img src="../../assets/image/cabin.png" class="imgsize">
-                        <img #img src="../../assets/image/cake.png" class="imgsize">
-                        <img #img src="../../assets/image/circus.png" class="imgsize">
-                    </div>
-                    <div class="grid">
-                        <img #img src="../../assets/image/game.png" class="imgsize">
-                        <img #img src="../../assets/image/safe.png" class="imgsize">
-                        <img #img src="../../assets/image/submarine.png" class="imgsize">
-                    </div>
-                </div>
+            <div style="text-align: center; color: #fff; padding: 5px;">
+                <span class="spn">Web Developer -</span>
+                <span class="spn">Graphic Artist -</span>
+                <span class="spn">User Experience Designer</span>
             </div>
-            <!-- </div> -->
-        </section>
+        </div>
+    </section>
 
-
-
-        <section class="section3 content">
-            <div class="vertical-center">
-                <div class="title" style="color: #fff;">ABOUT</div>
-                <div>
-                    <div class="line">
-                        <img #img src="../../assets/image/star.png" height="20px" width="20px">
-                    </div>                    
-                </div>
-                <div class="row rowcmp">
-                    <div class="column">
-                        <p class="aboutcontent">Freelancer is free theme started by Start. The download includes
-                            complete source files
-                            including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy
-                            customization.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="aboutcontent">Wheather you are student looking to showcase your work, a professional
-                            looking to attract
-                            clients, or a graphic artist looking to share you projects, this template is the perfect
-                            starting point!</p>
-                    </div>
-                </div>
-                <div><button class="btn success"><img #img src="../../assets/image/download.png" class="btnimg">Download
-                        Theme</button></div>
-            </div>
-        </section>
-
-        <section class="section4 content">
-            <div class="title" style="color: #000000;">CONTACT ME</div>
+    <section class="section2">
+        <div class="imgsty">
+            <div class="title" style="color: #000000;">PORTFOLIO</div>
             <div>
                 <div class="line blackline">
                     <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
-                </div>                    
+                </div>
             </div>
-            <form class="formwidth">
-                <input type="text" id="fname" name="firstname" placeholder="Name">
-                <input type="email" id="email" name="email" placeholder="Email Address">
-                <input type="number" id="phone" name="lastname" placeholder="Phone Number">
-                <textarea id="message" name="message" placeholder="Message"
-                    style="border-bottom: 1px solid #ccc !important; height:100px !important"></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </section>
+            <!-- <div class="images6"> -->
+            <div>
+                <div class="grid">
+                    <img #img src="../../assets/image/cabin.png" class="imgsize">
+                    <img #img src="../../assets/image/cake.png" class="imgsize">
+                    <img #img src="../../assets/image/circus.png" class="imgsize">
+                </div>
+                <div class="grid">
+                    <img #img src="../../assets/image/game.png" class="imgsize">
+                    <img #img src="../../assets/image/safe.png" class="imgsize">
+                    <img #img src="../../assets/image/submarine.png" class="imgsize">
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
 
 
-        <section class="section5 sec5mdfy">
+
+    <section class="section3 content">
+        <div class="vertical-center">
+            <div class="title" style="color: #fff;">ABOUT</div>
+            <div>
+                <div class="line">
+                    <img #img src="../../assets/image/star.png" height="20px" width="20px">
+                </div>
+            </div>
             <div class="row rowcmp">
-                <div class="column clmnmdfy" style="text-align: center !important;">
-                    <div>
-                        <h3>LOCATION</h3>
-                        <p>3481 Melrose place Beverly Hills, CA 90210</p>
-                    </div>
+                <div class="column">
+                    <p class="aboutcontent">Freelancer is free theme started by Start. The download includes
+                        complete source files
+                        including HTML, CSS and Javascipt as well as optional LESS stylesheets for wasy
+                        customization.
+                    </p>
                 </div>
-                <div class="column clmnmdfy" style="text-align: center !important;">
-                    <div>
-                        <h3>AROUND THE WEB</h3>
-                        <div>
-                            <img #img src="../../assets/image/facebook.png" class="roudeimg">
-                            <img #img src="../../assets/image/google-plus.png" class="roudeimg">
-                            <img #img src="../../assets/image/twitter.png" class="roudeimg">
-                            <img #img src="../../assets/image/linkedin.png" class="roudeimg">
-                            <img #img src="../../assets/image/dribbble.png" class="roudeimg">
-                        </div>
-                    </div>
+                <div class="column">
+                    <p class="aboutcontent">Wheather you are student looking to showcase your work, a professional
+                        looking to attract
+                        clients, or a graphic artist looking to share you projects, this template is the perfect
+                        starting point!</p>
                 </div>
-                <div class="column clmnmdfy" style="text-align: center !important;">
+            </div>
+            <div><button class="btn success"><img #img src="../../assets/image/download.png" class="btnimg">Download
+                    Theme</button></div>
+        </div>
+    </section>
+
+    <section class="section4 content">
+        <div class="title" style="color: #000000;">CONTACT ME</div>
+        <div>
+            <div class="line blackline">
+                <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
+            </div>
+        </div>
+        <form class="formwidth">
+            <input type="text" id="fname" name="firstname" placeholder="Name">
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <input type="number" id="phone" name="lastname" placeholder="Phone Number">
+            <textarea id="message" name="message" placeholder="Message"
+                style="border-bottom: 1px solid #ccc !important; height:100px !important"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+
+    <section class="section5 sec5mdfy">
+        <div class="row rowcmp">
+            <div class="column clmnmdfy" style="text-align: center !important;">
+                <div>
+                    <h3>LOCATION</h3>
+                    <p>3481 Melrose place Beverly Hills, CA 90210</p>
+                </div>
+            </div>
+            <div class="column clmnmdfy" style="text-align: center !important;">
+                <div>
+                    <h3>AROUND THE WEB</h3>
                     <div>
-                        <h3>ABOUT FREELANCER</h3>
-                        <p>Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
-                        </p>
+                        <img #img src="../../assets/image/facebook.png" class="roudeimg">
+                        <img #img src="../../assets/image/google-plus.png" class="roudeimg">
+                        <img #img src="../../assets/image/twitter.png" class="roudeimg">
+                        <img #img src="../../assets/image/linkedin.png" class="roudeimg">
+                        <img #img src="../../assets/image/dribbble.png" class="roudeimg">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section6 content">
-            <p>Copyright Your Website 2016
-            </p>
-        </section>
-    </div>
+            <div class="column clmnmdfy" style="text-align: center !important;">
+                <div>
+                    <h3>ABOUT FREELANCER</h3>
+                    <p>Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section6 content">
+        <p>Copyright Your Website 2016
+        </p>
+    </section>
+</div>
 
 <!-- </body> -->
 
