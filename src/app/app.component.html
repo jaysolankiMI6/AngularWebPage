@@ -3,7 +3,7 @@
         <div class="rownav">
             <p style="font-size: 18px;">START</p>
             <div class="listrght">
-                <ul style="font-size: 12px;" class="ulset">
+                <ul class="ulset">
                     <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
                     <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
                     <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
@@ -16,8 +16,7 @@
     </section>
 
     <div *ngIf="list" class="menulist">
-        <ul style="font-size: 12px; background-color: #2c3e50; 
-            float: none!important; padding: 0; margin: 0; ">
+        <ul class="ulstyle">
             <li class="nav-item active" style="float: none !important; padding: 10px;"><a [routerLink]="['/portfolio']"
                     class="a">PORTFOLIO</a></li>
             <li class="nav-item" style="float: none !important; padding: 10px;"><a [routerLink]="['/about']"
@@ -51,10 +50,10 @@
             <div class="title" style="color: #000000;">PORTFOLIO</div>
             <div class="linemrg">
                 <div class="line blackline">
-                    <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
+                    <img #img src="../../assets/image/star.png" class="blackstar">
                 </div>
             </div>
-            <div>
+            <!-- <div>
                 <div class="grid">
                     <img #img src="../../assets/image/cabin.png" class="imgsize">
                     <img #img src="../../assets/image/cake.png" class="imgsize">
@@ -64,6 +63,40 @@
                     <img #img src="../../assets/image/game.png" class="imgsize">
                     <img #img src="../../assets/image/safe.png" class="imgsize">
                     <img #img src="../../assets/image/submarine.png" class="imgsize">
+                </div>
+            </div> -->
+            <!-- <div class="outer-grid">
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/cabin.png">
+                    <img #img src="../../assets/image/cake.png">
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/circus.png">
+                    <img #img src="../../assets/image/game.png">
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/safe.png">
+                    <img #img src="../../assets/image/submarine.png">
+                </div>
+            </div> -->
+            <div class="outer-grid">
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/cabin.png" width="100%"> 
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/cake.png" width="100%">
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/circus.png" width="100%">
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/game.png" width="100%">
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/safe.png" width="100%">
+                </div>
+                <div class="inner-grid">
+                    <img #img src="../../assets/image/submarine.png" width="100%">
                 </div>
             </div>
         </div>
@@ -101,7 +134,7 @@
         <div class="title" style="color: #000000;">CONTACT ME</div>
         <div class="linemrg">
             <div class="line blackline">
-                <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
+                <img #img src="../../assets/image/star.png" class="blackstar">
             </div>
         </div>
         <form class="formwidth">
@@ -138,7 +171,8 @@
             <div class="column clmnmdfy" style="text-align: center !important;">
                 <div>
                     <h3>ABOUT FREELANCER</h3>
-                    <p style="font-size: 14px;">Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
+                    <p style="font-size: 14px;">Freelance is free to use, open source theme created by <a
+                            style="color: #18bc9c;">Start</a>
                     </p>
                 </div>
             </div>
