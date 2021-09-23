@@ -1,38 +1,18 @@
-<!-- <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head> -->
-
-<!-- <body> -->
 <div class="container">
     <section class="navbar-area">
-        <!-- <div class="rownav">
-                <div class="column clmnleft">
-                    <div style="font-size: 18px;">START</div>
-                </div>
-                <div class="column clmnright">
-                    <ul style="font-size: 12px;" class="ulset">
-                        <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
-                        <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
-                        <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
-                    </ul>
-                    <button class="btn" id="menu_btn" (click)="displaymenu();"><i class="fa fa-bars"></i> MENU</button>
-                </div>
-            </div> -->
-
         <div class="rownav">
-            <p style="font-size: 18px; font-weight: bold;">START</p>
+            <p style="font-size: 18px;">START</p>
             <div class="listrght">
-            <ul style="font-size: 12px;" class="ulset">
-                <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
-                <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
-                <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
-            </ul>
-            <button class="btn" id="menu_btn" (click)="displaymenu();"><i class="fa fa-bars"></i> MENU</button>
+                <ul style="font-size: 12px;" class="ulset">
+                    <li class="nav-item active"><a [routerLink]="['/portfolio']" class="a">PORTFOLIO</a></li>
+                    <li class="nav-item"><a [routerLink]="['/about']" class="a">ABOUT</a></li>
+                    <li class="nav-item"><a [routerLink]="['/contact']" class="a">CONTACT</a></li>
+                </ul>
+                <button class="btn" id="menu_btn" (click)="displaymenu();">MENU
+                    <img #img src="../../assets/image/bars.png" style="width: 10px;">
+                </button>
             </div>
         </div>
-
     </section>
 
     <div *ngIf="list" class="menulist">
@@ -47,14 +27,13 @@
         </ul>
     </div>
 
-
     <section class="section1 content">
         <div class="vertical-center">
             <div>
                 <img #img src="../../assets/image/profile.png" height="200px" width="200px">
             </div>
             <div class="title" style="color: #fff; font-size: 48px !important;">START</div>
-            <div>
+            <div class="linemrg">
                 <div class="line">
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
@@ -70,12 +49,11 @@
     <section class="section2">
         <div class="imgsty">
             <div class="title" style="color: #000000;">PORTFOLIO</div>
-            <div>
+            <div class="linemrg">
                 <div class="line blackline">
                     <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
                 </div>
             </div>
-            <!-- <div class="images6"> -->
             <div>
                 <div class="grid">
                     <img #img src="../../assets/image/cabin.png" class="imgsize">
@@ -89,15 +67,12 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </section>
-
-
 
     <section class="section3 content">
         <div class="vertical-center">
             <div class="title" style="color: #fff;">ABOUT</div>
-            <div>
+            <div class="linemrg">
                 <div class="line">
                     <img #img src="../../assets/image/star.png" height="20px" width="20px">
                 </div>
@@ -124,7 +99,7 @@
 
     <section class="section4 content">
         <div class="title" style="color: #000000;">CONTACT ME</div>
-        <div>
+        <div class="linemrg">
             <div class="line blackline">
                 <img #img src="../../assets/image/star.png" height="20px" width="20px" class="blackstar">
             </div>
@@ -145,7 +120,7 @@
             <div class="column clmnmdfy" style="text-align: center !important;">
                 <div>
                     <h3>LOCATION</h3>
-                    <p>3481 Melrose place Beverly Hills, CA 90210</p>
+                    <p style="font-size: 14px;">3481 Melrose place Beverly Hills, CA 90210</p>
                 </div>
             </div>
             <div class="column clmnmdfy" style="text-align: center !important;">
@@ -163,22 +138,14 @@
             <div class="column clmnmdfy" style="text-align: center !important;">
                 <div>
                     <h3>ABOUT FREELANCER</h3>
-                    <p>Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
+                    <p style="font-size: 14px;">Freelance is free to use, open source theme created by <a style="color: #18bc9c;">Start</a>
                     </p>
                 </div>
             </div>
         </div>
     </section>
     <section class="section6 content">
-        <p>Copyright Your Website 2016
+        <p style="font-size: 12px;">Copyright &copy; Your Website 2016
         </p>
     </section>
 </div>
-
-<!-- </body> -->
-
-<!-- </html> -->
-
-<!-- <p>demo</p> -->
-<!-- <a [routerLink]="['/nested']"> Navigation -</a> -->
-<!-- <router-outlet></router-outlet> -->
